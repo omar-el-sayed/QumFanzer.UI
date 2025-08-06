@@ -1,3 +1,146 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 217 71% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 217 71% 63%;
+    --primary-dark: 217 71% 43%;
+
+    --secondary: 215 25% 95%;
+    --secondary-foreground: 215 25% 27%;
+
+    --success: 158 64% 52%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 158 64% 62%;
+
+    --warning: 45 93% 58%;
+    --warning-foreground: 0 0% 100%;
+
+    --yellow: 48 96% 53%;
+    --yellow-foreground: 0 0% 100%;
+
+    --muted: 215 25% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 71% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 71% 53%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(217 71% 53%), hsl(217 71% 43%));
+    --gradient-success: linear-gradient(135deg, hsl(158 64% 52%), hsl(158 64% 42%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 71% 53%) 0%, hsl(158 64% 52%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+
+    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-medium: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-large: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 20px hsl(217 71% 53% / 0.15);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --yellow: #eab308;
+    --yellow-foreground: #422006;
+    --card: #ffffff;
+    --foreground: #09090b;
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+}
+
+body {
+    background-color: hsl(var(--background));
+    font-family:
+        Noto Sans Arabic,
+        system-ui,
+        sans-serif;
+    color: hsl(var(--foreground));
+    direction: rtl;
+}
+
+.flex {
+    display: flex;
+}
+.items-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.gap-2 {
+    gap: 0.5rem;
+}
+.gap-4 {
+    gap: 1rem;
+}
+.gap-6 {
+    gap: 1.5rem;
+}
+.hidden {
+    display: none;
+}
+.sticky {
+    position: sticky;
+}
+.top-0 {
+    top: 0;
+}
+.z-50 {
+    z-index: 50;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.relative {
+    position: relative;
+}
+.transition-colors {
+    transition: color 0.2s ease;
+}
+.transition-opacity {
+    transition: opacity 0.2s ease;
+}

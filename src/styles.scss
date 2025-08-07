@@ -77,11 +77,8 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     --yellow: #eab308;
-    --yellow-foreground: #422006;
     --card: #ffffff;
-    --foreground: #09090b;
     --muted: #f4f4f5;
-    --muted-foreground: #71717a;
 }
 
 body {
@@ -93,7 +90,9 @@ body {
     color: hsl(var(--foreground));
     direction: rtl;
 }
-
+.container {
+    max-width: 1400px;
+}
 .flex {
     display: flex;
 }
@@ -143,6 +142,10 @@ body {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
+.py-12 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 .relative {
     position: relative;
 }
@@ -151,4 +154,33 @@ body {
 }
 .transition-opacity {
     transition: opacity 0.2s ease;
+}
+.bg-background {
+    background-color: hsl(var(--background));
+}
+.bg-gradient-primary {
+    background-image: var(--gradient-primary);
+}
+.gap-6 {
+    gap: 1.5rem;
+}
+.grid {
+    display: grid;
+}
+.duration-300 {
+    animation-duration: 300ms;
+    transition-duration: 300ms;
+}
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.shadow-medium {
+    --tw-shadow: var(--shadow-medium);
+    --tw-shadow-colored: var(--shadow-medium);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.bg-card {
+    background-color: hsl(var(--card));
 }

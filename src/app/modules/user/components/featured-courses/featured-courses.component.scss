@@ -1,0 +1,29 @@
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: hsl(var(--foreground));
+    font-weight: 700;
+}
+
+.description {
+    color: hsl(var(--muted-foreground));
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 42rem;
+}
+
+button.group {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: hsl(var(--background));
+    border-color: hsl(var(--input));
+    border-radius: calc(var(--radius) - 2px);
+}
+
+button.group:hover {
+    color: hsl(var(--accent-foreground));
+    background-color: hsl(var(--accent)) !important;
+}

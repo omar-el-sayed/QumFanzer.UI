@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'QumFanzer.UI'`, () => {
+  it(`should have as title 'QumFanzer'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('QumFanzer.UI');
+    expect(app.title).toEqual('QumFanzer');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('QumFanzer.UI app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('QumFanzer app is running!');
   });
 });

@@ -1,0 +1,52 @@
+<section>
+    <div class="row">
+        <div *ngFor="let course of courses" class="col-4 mb-4">
+            <div class="course-card p-3">
+                <div class="card-header">
+                    <div class="difficulty-badge py-1 px-2">{{ course.category }}</div>
+                    <div class="level-badge py-1 px-2">{{ course.level }}</div>
+                    <div class="book-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V8h2v9zm4 0h-2v-4h2v4z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="course-title">{{ course.title }}</h3>
+                    <p class="author">بواسطة {{ course.instructor }}</p>
+                    <div class="course-stats">
+                        <div class="stat-item">
+                            <svg class="stat-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                            <span class="rating">{{ course.rating }}</span>
+                        </div>
+                        <div class="stat-item">
+                            <svg class="stat-icon" viewBox="0 0 24 24">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+                            </svg>
+                            <span>{{ course.students }}</span>
+                        </div>
+                        <div class="stat-item">
+                            <svg class="stat-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58-8-8-8z" />
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                            </svg>
+                            <span>{{ course.duration }}</span>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="enroll-btn">التسجيل الآن</button>
+                        <div class="price">
+                            <span class="price-amount">{{ course.price }}</span>
+                            <span class="currency">جنيه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
